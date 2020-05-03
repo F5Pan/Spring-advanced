@@ -15,16 +15,15 @@ public class Userform {
 	// "^((13[0-9])|(15[^4])|(18[0,2,3,5-9])|(17[0-8])|(147))\\d{8}$";
 	public static final String PHONE_REG = "^09[0-9]{8}$";
 
-	@NotBlank
+	@NotBlank(message = "必填欄位")
 	private String username;
-	@NotBlank
 	@Length(min = 6, message = "密碼最少需要6位")
 	private String password;
 	@Pattern(regexp = PHONE_REG, message = "請輸入正確的手機號碼")
 	private String phone;
 	@Email
 	private String email;
-	@NotBlank
+	@NotBlank(message = "必填欄位")
 	private String confirmPassword;
 
 	public String getUsername() {
