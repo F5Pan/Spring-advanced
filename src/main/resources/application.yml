@@ -1,19 +1,19 @@
-server:
-  port: 8080
 spring:
   thymeleaf:
     mode: HTML
+
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/spring_boot?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/spring_boot?useUnicode=true&characterEncoding=utf-8
     username: root
     password: root
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-    logging: null
+
+logging:
   level:
     root: info
     com.lrm: debug
-  file: logs/debug.log
+  file: log/my.log

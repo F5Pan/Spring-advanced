@@ -24,7 +24,7 @@ public class LoginController {
 
 	@GetMapping("/register")
 	public String register(Model model) {
-		model.addAttribute("userform",new Userform());
+		model.addAttribute("userform", new Userform());
 		return "register";
 	}
 
@@ -44,5 +44,10 @@ public class LoginController {
 		User user = userform.convertToUser();
 		userRepository.save(user);
 		return "redirect:/login";
+	}
+
+	@GetMapping("/exception")
+	public String testException() {
+		throw new RuntimeException();
 	}
 }

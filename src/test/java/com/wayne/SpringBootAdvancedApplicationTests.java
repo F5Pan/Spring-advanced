@@ -1,12 +1,11 @@
 package com.wayne;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SpringBootAdvancedApplicationTests {
 
-	@Test
+	@org.junit.Test
 	void contextLoads() {
 	}
 
