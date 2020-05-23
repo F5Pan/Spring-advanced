@@ -15,5 +15,5 @@ spring:
 logging:
   level:
     root: info
-    com.lrm: debug
+    com.wayne: debug
   file: log/my.log
